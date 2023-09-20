@@ -1,68 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 body{
-    background-color:rgb(217, 232, 238);
+    height: 150vh;
+    /* background-color: aqua; */
+    background-image: url(resources/images/home-main.jpg);
+    background-size: 1550px;
+    background-repeat: no-repeat;
+    color: white;
+    background-attachment: fixed;
+    background-position-y: bottom;
+    /* backdrop-filter: blur(1px); */
+    font-family: 'Poiret One', cursive;
+    box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.4);
+    /* mix-blend-mode: difference; */
+    font-weight: bold;
+}
+#lid-logo{
+    width: 50px;
+    border-right: 1px solid grey;
+    padding-right: 40px;
+}
+#shopping-bag{
+    width: 50px;
 }
 
-ul{
+.nav-bars, ul{
     display: flex;
-    align-items: center;
+    
 }
 
-li{
+.left-li{
+    padding: 50px;
+}
+.right-li{
+    padding: 20px;
+}
+ul{
     list-style: none;
-    margin: 40px 10px;
 }
-hr{
-    color:aquamarine;
-    height: 60px;    
-}
-.nav-1{
-    
-    margin-right: auto;
-    margin-left: 60px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.nav-2{
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color:white;
+
+.navi-right{
+    margin-left: auto;
+    /* background-color: white; */
+    color: white;
     border-radius: 0 0 0 70px;
-    padding-left: 60px;
-    padding-bottom: 20px;
-    padding-right: 30px;
+    height: 118.4px;
+    filter: contrast(10);
 }
-.shopping-bag{
-    height: 40px;
+.nav-right ul{
+    padding-right: 0px;
+    background-color: #bdd4e7;
+    
+
+}
+.navi-left ul, .navi-right ul{
+    align-items: center;
+    margin-left: 20px;
+    height: 118px;
+    flex-wrap: wrap;
+    font-weight: bolder;
+    filter: contrast(10);
+    font-size: large;
+    text-decoration: underline;
+}
+.side-bar{
+    width: 100px;
+}
+.side-bar-list{
+    display: flex;
+    flex-direction: column; 
+}
+.icons{
+    width: 20px;
+    margin: 15px 34px;
+}
+#side-quote{
+    z-index: 0;
+    transform: rotate(270deg);
+    transform-origin: 0;
+    margin-left: 40px;
+    margin-top: 420px;
+    width: 450px;
+}
+main{
+    display: flex;
+}
+table{
     margin-top: 30px;
 }
-.lid-logo{
-    height: 60px;
-    margin-right: 20px;
+
+th{
+    font-weight: lighter;
+    opacity: 0.5;
+    font-size: small;
 }
 
-.side-set{
-    display: flex;
-    flex-direction: column;
-    width: 60px;
-    height: 100vh;
-    margin-left: 60px;
-    align-items: center;
+td, th{
+    padding: 5px 20px 5px 10px;
 }
-.test{
-    margin: 10px;
-}
-.logo-set{
-    height: 20px;
+.content{
+    height: 300px;
+    width: 450px;
+    padding: 20px;
+}   
+#home-main{
+    width: 700px;
     
-}
-
-.quote-set{
-    transform: rotate(-90deg);
-    width: 500px;
-    margin-top: 230px;
 }
